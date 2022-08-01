@@ -1,0 +1,393 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    transition: 0.4 ease;
+}
+
+:root {
+    --primary-background: #f8f8ff;
+    --wrapper-background: #fff;
+    --h1-dark-color: #000000;
+    --light-dark-mode-color: #ffffff;
+    --circle1: #4cff3f;
+    --circle2: #bcff3f;
+    --circle3: #3fff89;
+}
+
+/* .dark-mode {
+    --primary-background: #06021a;
+    --wrapper-background: #21212e;
+    color: #fff;
+    --light-dark-mode-color: #21212e;
+    --circle1: #4cff3f;
+    --circle2: #bcff3f;
+    --circle3: #3fff89;
+}
+
+#light-dark-mode {
+    background: var(--light-dark-mode-color);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    font-size: 1.5rem;
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05);
+    cursor: pointer;
+    padding-left: 11px;
+    padding-top: 10px;
+} */
+
+body{
+    background: var(--primary-background);
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* .blurry-gradient {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+} */
+
+.circle1 {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background: var(--circle1);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    filter: blur(40px);
+    opacity: 60%;
+}
+
+.circle2 {
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background: var(--circle2);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    filter: blur(40px);
+    opacity: 60%;
+}
+
+.circle3 {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    background: var(--circle1);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    filter: blur(40px);
+    opacity: 60%;
+}
+
+.main-heading {
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+/* .pass-image {
+    position: fixed;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    height: 20rem;
+} */
+
+/* .description {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    z-index: 1; 
+    text-align: left;
+} */
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--wrapper-background);
+    width: 30rem;
+    height: 25rem;
+    border-radius: 20px;
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.text {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    resize: none;
+    width: 22rem;
+    padding-top: 10px;
+    padding-left: 1rem;
+    border-radius: 50px;
+    height: 3rem;
+    outline-color: #3fff89;
+}
+
+.tool-heading {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .inc-num {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.inc-spec {
+    position: fixed;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.lbl-num {
+    position: fixed;
+    top: 50%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+}
+
+.lbl-spec {
+    position: fixed;
+    top: 55%;
+    left: 68.5%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    position: relative;
+  }
+  
+  label::before {
+    content: "";
+    background: url("img/check-circle.svg");
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -44px;
+    top: -6px;
+  
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  }
+  
+  input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+  }
+  
+  label::after {
+    content: "";
+    border: 2px solid #27ae60;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -4px;
+    border-radius: 50%;
+  } */
+
+  .gen-btn {
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    width: 20rem;
+    background: #3fff89;
+    border: none;
+    cursor: pointer;
+}
+
+.gen-btn:hover {
+    box-shadow: 0px 8px 20px rgba(63, 255, 137, 0.3);
+    transition: all 0.4s ease-in-out;
+}
+
+.copy-btn {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    width: 20rem;
+    background: #3fff89;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    box-shadow: 0px 8px 20px rgba(63, 255, 137, 0.3);
+    transition: all 0.4s ease-in-out;
+}
+
+.bx {
+    font-size: 1.3rem;
+    padding-right: 5px;
+}
+
+.tip-heading {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tip {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(58, 58, 58); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+    border-radius: 10px;
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+  }
+  
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+@media (max-width: 672px) {
+    .tool-heading {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 605px) {
+    .tool-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        width: 27rem;
+    }
+}
+
+@media (max-width: 505px) {
+    .wrapper {
+        width: 25rem;
+    }
+    .tool-heading {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 445px) {
+    .wrapper {
+        width: 22rem;
+    }
+    .text {
+        width: 18rem;
+        top: 38%;
+    }
+    .gen-btn {
+        width: 18rem;
+    }
+    .copy-btn {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 436px) {
+    .tool-heading {
+        font-size: 1.2rem;
+    }
+    .tip {
+        padding-left: -20%;
+        font-size: 0.9rem;
+    }
+}

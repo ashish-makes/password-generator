@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Password Generator</title>
+</head>
+<body>
+    <!-- onload="onload()" -->
+    <!-- <div id="light-dark-mode" class="bx bx-moon"></div> -->
+    <div class="blurry-gradient">
+        <!-- <div class="circle1"></div>
+        <div class="circle2"></div> -->
+        <div class="circle3"></div>
+    </div>
+    <!-- <h1 class="main-heading">Password Generator</h1> -->
+    <!-- <img class = "pass-image" src="img/password.png"> -->
+    <!-- <p class="description">Generate strong, unpredictable passwords to <br> secure your presence on the web with our <br> free password generator tool.</p> -->
+    <div class = wrapper id="wrapper"></div>
+    <h1 class="tool-heading">Password Generator</h1>
+    <textarea class="text" id="text" placeholder="click generate..." required></textarea>
+    <!-- <input class="inc-num" id="inc-num" type="checkbox" value="Include numbers">
+    <label for="inc-num" class="lbl-num">Include numbers</label>
+    <input class="inc-spec" id="inc-spec" type="checkbox" value="Include special chanracters">
+    <label for="inc-spec" class="lbl-spec">Include special characters</label> -->
+    <p class="tip"><span class="tip-heading"><b>💡 TIPS:</b></span><br>✅ use complex passwords<br>✅ Do not resue passwords</p>
+    <button class="gen-btn" onclick="genpass(16)"><i class='bx bx-lock-alt'></i>Generate Password</button>
+    <button class="copy-btn"><i class='bx bx-copy' ></i>Copy Password</button>
+    </div>
+    <div id="snackbar">Text copied to clipboard</div>
+    <div class="no-input" id="snackbar">No password generated</div>
+    <script src="app.js"></script>
+</body>
+</html>
